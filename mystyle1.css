@@ -1,0 +1,73 @@
+.box {
+    border: solid red;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cormorant SC', serif;
+    
+}
+
+.mlogo {
+    padding-top: 3px;
+}
+
+.cname {
+    padding-top: 12px;
+    font-size: 55px;
+    border: solid;
+    text-shadow: 8px 8px 2px green;
+    height: 100px;
+    font-weight: bold;
+    background-color: gold;
+    color: white;
+    text-align: center;
+
+}
+
+.menu
+{
+    margin-top: 10px;
+    text-align: center;
+    background-color: aqua;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.section{
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: darkseagreen;
+}
+.about{
+    margin-top: 10px;
+    text-align: justify;
+}
+.services{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+    box-shadow:  0px 0px 8px 5px grey;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+.services:hover{ transform: scale(1.2);}
+.contact{margin-top: 20px;
+border-radius: 90px black;}
+
+
+button{ padding: 10px 50px;
+font-size: xx-large;
+}
