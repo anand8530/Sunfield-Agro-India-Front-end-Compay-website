@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Asset\Css\960.css" />
+    <link rel="stylesheet" href="Asset\Css\mystyle1.css" />
+    <link rel="stylesheet" href="Asset\Css\homecss.css">
+    <link href="<link href=" https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+
+    <title> Login Here</title>
+    <style>
+
+
+    </style>
+    <script>
+        function abc() {
+            var x = document.getElementById("nm");
+            var y = x.value;
+            var p = document.getElementById("pwd");
+            var z = p.value;
+
+
+            // document.write("Username  - " + y + " & Password - " + z);
+
+
+            if (y == "Anandjai" && z == "0123456") {
+                var a = document.createElement('a');
+                var link = document.createTextNode("Click Here TO Access My Project");
+                a.appendChild(link);
+                a.title = "Click Here TO Access My Project";
+                a.href = "index.html";
+                document.body.appendChild(a);
+                document.write(str);
+
+            }
+            else {
+                alert(" Enter valid Data (Wrong Username or Password)");
+                x.value = "";
+                p.value = "";
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container_12">
+        <div class="grid_3 mlogo ">
+            <img src="Asset/Photos/logosun.png" alt="Temple" width="220px" height="95">
+        </div>
+        <div class="grid_9 cname box"> Sunfield Agro India </div>
+
+        <div class="clear"> </div>
+
+
+        <div class="grid_12 home " style="color: black;">  Write Username and Password To Access My Project
+
+        </div>
+        <div class="clear"></div>
+        
+
+<div class="grid_12">
+
+        <form style="font-size: 25px;  text-align: center;" >
+            <div class="in">
+                <label for="nm">Username</label>
+                <input type="text"  id="nm" placeholder="anand@123">
+            </div>
+            <br>
+            <div class="in">
+                <label for="nm">Password</label>
+                <input type="password"  id="pwd" placeholder="*******">
+            </div>
+    <br>
+
+            <button style="border-radius: 50px; background:skyblue" type="button"  onclick="return abc()">Submit</button>
+
+        </form>
+
+
+    </div>
+
+
+
+
+    <div class="clear"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

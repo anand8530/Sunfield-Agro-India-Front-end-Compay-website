@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Asset\Css\960.css" />
+    <link rel="stylesheet" href="Asset\Css\homecss.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="Asset\Css\mystyle1.css" />
+    <link href="<link href=" https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+.login{
+    padding-top: 20px;
+   background-color: pink;
+   display:flex;
+}
+
+.form-login{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 400px;
+    position:relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form-login span{
+   font-weight: bold;
+   padding: 0 10px;
+   color:#555;
+   cursor: pointer;
+   width: 100px;
+   display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-login form{
+    max-width:300px;
+    padding:0 20px;
+    position: absolute;
+    top:130px;
+    transition: transform 1s;
+
+}
+
+#login{
+    left:-300px;
+}
+#register{
+    left :0;
+}
+
+.form-login form input{
+    width:100%;
+    height:30px;
+    margin:10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.form-login form .btn{
+    width:100%;
+    border:none;
+    cursor: pointer;
+    margin:10px 0;
+    color:white;
+    background-color: rgba(4, 115, 241);
+    border-radius: 20px;
+}
+
+.form-login form .btn:focus{
+    outline: none;
+}
+
+#indicator{
+    width:50px;
+    border: none;
+    background: blue;
+    height: 3px;
+    margin-top:8px;
+    transform:translate(100px);
+    transition: transform 1s;
+}
+</style>
+<body>
+
+
+
+
+
+
+
+
+    <div class="container_12">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class="navbar-brand" href="Index.html">Sunfield Agro </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="abouts.html" target="_blank">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="product.html" target="_blank">
+                            Product
+                        </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button type="button" class="btn btn-success">Search</button>
+
+
+
+                </form>
+
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="grid_3 mlogo">
+            <img src="Asset/Photos/logosun.png" alt="Temple" width="220px" height="95">
+        </div>
+        <div class="grid_9 heading">
+            Sunfield Agro India
+        </div>
+
+
+        <div class="clear"> </div>
+        <div class="grid_12 home"> <a href="#">Sign UP / Login</a>
+
+        </div>
+        <div class="clear"> </div>
+<hr >
+    
+
+        <div class="grid_12 login col col-lg-6 col-md-6 col-12">
+           
+
+
+
+            <div class="form-login">
+                <div class="form-btn">
+                    <span onclick="loginfun()">Login</span>
+                    <span onclick="registerfun()">Register</span>
+                    <hr id="indicator">
+                </div>
+                <form id="login">
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password"><br><br>
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forget password</a>
+                </form>
+
+                <form id="register">
+                    <input type="text" placeholder="username">
+                    <input type="email" placeholder="email">
+                    <input tyupe="password" placeholder="password"><br>
+                    <br>
+                    <button type="submit" class="btn">Register</button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var login = document.getElementById("login")
+        var register = document.getElementById("register");
+        var indicator = document.getElementById("indicator");
+
+        function registerfun()
+        {
+            register.style.transform ="translatex(0px)";
+            login.style.transform ="translatex(0px)";
+            indicator.style.transform ="translatex(100px)";   
+            }
+            function loginfun()
+            {
+                
+            register.style.transform ="translatex(300px)";
+            login.style.transform ="translatex(300px)";
+            indicator.style.transform ="translatex(100px)"; 
+            }
+    </script>
+
+
+</body>
+
+</html>
